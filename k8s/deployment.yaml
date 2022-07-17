@@ -13,7 +13,7 @@ spec:
         app: xlaodie
     spec:
       containers:
-      - image: okteto.dev/ray:latest
+      - image: okteto.dev/xlaodie:latest
         name: xlaodie
         ports:
         - containerPort: 8080
