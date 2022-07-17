@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ray
+  name: xlaodie
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ray
+      app: xlaodie
   template:
     metadata:
       labels:
-        app: ray
+        app: xlaodie
     spec:
       containers:
       - image: okteto.dev/ray:latest
-        name: ray
+        name: xlaodie
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "0adb48a6-a846-4782-b8f9-9e7f023c9594"
         - name: Vless_Path
-          value: "/vl555"
+          value: "/vlpoog"
         - name: Vmess_UUID
-          value: "f8bfb621-6728-4a6c-ae69-2106cd3d7c8a"
+          value: "0adb48a6-a846-4782-b8f9-9e7f023c9594"
         - name: Vmess_Path
-          value: "/vm666"
+          value: "/vmokpp"
         - name: Share_Path
           value: "/v2link"
